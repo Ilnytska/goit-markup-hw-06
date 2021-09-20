@@ -1,6 +1,6 @@
 :root {
   --primary-text-color: #757575;
-  --title-color: #212121;
+  --titleColor: #212121;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
   --primary-background-color: #ffffff;
@@ -10,17 +10,271 @@
   --shadow-card: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
+
+/*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
 body {
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+body {
   font-family: "roboto", sans-serif;
-  font-size: var(--primary-font-size);
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
 ul {
   list-style: none;
 }
+
 h1,
 h2,
 h3,
@@ -28,26 +282,19 @@ h4,
 p {
   margin: 0;
 }
+
 ul,
 li {
   margin: 0;
   padding-left: 0;
 }
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -58,38 +305,41 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
-/*хедер*/
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header-section {
   border-bottom: 1px solid #ececec;
 }
-.logo {
-  color: #000000;
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  text-decoration: none;
-  margin-right: 93px;
-}
-.logo-span {
-  color: var(--accent-color);
-}
+
 .main-navigation {
   flex-direction: row;
   display: flex;
   align-items: center;
   margin-right: 93px;
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
-.main-navigation-list {
+
+.navigation__list {
   display: flex;
   flex-direction: row;
 }
 
-/*links*/
-.main-navigation-list .link {
+.navigation__link {
   text-decoration: none;
   color: var(--title-color);
   font-size: 14px;
@@ -103,8 +353,25 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
+.navigation__link:focus, .navigation__link:hover {
+  color: var(--accent-color);
+}
 
-.main-navigation-list .link.current::after {
+.navigation__link--current {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.navigation__link--current::after {
   position: absolute;
   content: " ";
   border-bottom: 4px solid var(--accent-color);
@@ -114,20 +381,14 @@ img {
   width: 100%;
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-navigation-list .link:focus,
-.main-navigation-list .link:hover {
-  color: var(--accent-color);
-}
-.main-navigation-list .link.current {
-  color: var(--accent-color);
-}
 
-.main-navigation-list-contacts {
+.navigation-contacts {
   display: flex;
   flex-direction: row;
   margin-left: auto;
 }
-.link-mail {
+
+.navigation-contacts__link {
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
@@ -136,48 +397,34 @@ img {
   padding-right: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-envelope {
+.navigation-contacts__link:hover, .navigation-contacts__link:focus {
+  color: var(--accent-color);
+}
+
+.navigation-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.link-mail:hover,
-.link-mail:focus {
-  color: var(--accent-color);
+.navigation-contacts__icon:focus, .navigation-contacts__icon:hover {
+  fill: currentColor;
 }
-.link-phone {
-  color: var(--primary-text-color);
-  font-size: 14px;
-  font-weight: 500;
+
+.navigation__logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
   text-decoration: none;
-  letter-spacing: 0.02em;
-  display: flex;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-smartphone {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.icon-smartphone:focus,
-.icon-smartphone:hover,
-.icon-envelope:focus,
-.icon-envelope:hover {
-  fill: currentColor;
-}
-.link-phone:hover,
-.link-phone:focus {
-  color: var(--accent-color);
+  margin-right: 93px;
 }
 
-/*Основной контент*/
+.logo-span {
+  color: var(--accent-color);
+}
 
 .overlay {
   background-color: var(--cta-footer-background-color);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/img-cta.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-cta.jpg");
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1600px;
@@ -186,6 +433,7 @@ img {
   margin-right: auto;
   background-size: cover;
 }
+
 .cta {
   display: flex;
   align-items: center;
@@ -195,7 +443,8 @@ img {
   padding-bottom: 200px;
   width: auto;
 }
-.cta-title {
+
+.cta__title {
   color: #ffffff;
   font-size: 44px;
   font-weight: 900;
@@ -206,7 +455,8 @@ img {
   padding-bottom: 30px;
   width: 696px;
 }
-.btn-common {
+
+.cta__button {
   color: #ffffff;
   font-size: var(--primary-font-size);
   background-color: var(--accent-color);
@@ -221,11 +471,12 @@ img {
   font-weight: bold;
   font-size: 16px;
 }
-/*особенности*/
+
 .section-features {
   padding-top: 94px;
 }
-.list-features {
+
+.features__list {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -233,68 +484,53 @@ img {
   align-items: center;
   flex-direction: row;
 }
-.list-features .item:nth-child(4) {
-  margin-right: 0px;
-}
-.list-features > .item::before {
-  display: block;
-  content: " ";
-  margin-bottom: 30px;
-  background-color: var(--accent-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px;
+
+.features__icon {
   width: 270px;
   height: 120px;
 }
 
-.icon-antenna::before {
-  background-image: url(../images/img_svg/antenna\ 1.svg);
-}
-.icon-watch::before {
-  background-image: url(../images/img_svg/clock\ 1.svg);
-}
-.icon-monitor::before {
-  background-image: url(../images/img_svg/diagram\ 1.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/img_svg/astronaut\ 1.svg);
-}
-.list-features-title {
+.features__title {
   color: var(--title-color);
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 14px;
 }
-.list-features > .item {
+
+.features__item {
   width: 270px;
   margin-right: 30px;
 }
-/*Чем мы занимаемся*/
+.features__item:last-child {
+  margin-right: 0px;
+}
 
-.jobs-section-title {
+.jobs__title {
   color: var(--title-color);
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 50px;
   text-align: center;
 }
-.jobs-section-list {
+
+.jobs__list {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.jobs-section-list .item:nth-child(2) {
+.jobs__list .jobs__item:nth-child(2) {
   padding-right: 30px;
   padding-left: 30px;
 }
+
 .thumb {
   position: relative;
   overflow: hidden;
 }
-.thumb-overlay {
+
+.thumb__overlay {
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
@@ -304,103 +540,107 @@ img {
   align-items: center;
   justify-content: center;
 }
-.label {
+
+.thumb__label {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
 }
-/*Hаша команда*/
+
 .section-team {
   background-color: var(--accent-background-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-section-card {
+
+.team__card {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
 }
-.team-section-card .card-team {
+
+.card__item {
   border-radius: 0 0 4px 4px;
   border: 0px;
   box-shadow: var(--shadow-card);
   background-color: var(--primary-background-color);
 }
-.team-section-card .card-team:nth-child(2) {
+.card__item:nth-child(2) {
   margin-right: 30px;
   margin-left: 30px;
 }
-.team-section-card .card-team:nth-child(4) {
+.card__item:nth-child(4) {
   margin-left: 30px;
 }
-.team-section-title {
+
+.team__title {
   color: var(--title-color);
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 50px;
   text-align: center;
 }
-.card-description {
+
+.card__description {
   text-align: center;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-section-card-title {
+
+.card__title {
   color: var(--title-color);
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 10px;
 }
-.team-section-card-text {
+
+.card__text {
   font-size: 16px;
 }
-.social-web-logo {
+
+.social-web {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding-top: 16px;
 }
-.social-web-logo .web-logo:not(:last-child) {
+.social-web .social-web__logo:not(:last-child) {
   margin-right: 10px;
 }
-
-.logo-elipse {
+.social-web .social-web__elipse {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-elipse:hover,
-.logo-elipse:focus,
-.logo-elipse:hover .icon-socialweb,
-.logo-elipse:focus .icon-socialweb {
+.social-web .social-web__elipse:hover, .social-web .social-web__elipse:focus {
   background-color: var(--accent-color);
+}
+.social-web .social-web__elipse:hover .social-web__icon, .social-web .social-web__elipse:focus .social-web__icon {
   fill: #ffffff;
 }
-
-.icon-socialweb {
+.social-web .social-web__icon {
   text-align: center;
   fill: var(--icon-color);
 }
 
-/*Постоянные клиенты*/
-.clients-title {
+.clients__title {
   color: var(--title-color);
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 50px;
   text-align: center;
 }
-.clients-list {
+
+.clients__list {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -408,14 +648,15 @@ img {
   margin-right: auto;
   justify-content: center;
 }
-.list-logo {
+
+.clients__item {
   margin-right: 30px;
 }
-.list-logo:last-child {
+.clients__item:last-child {
   margin-right: 0px;
 }
 
-.company-logo {
+.clients__logo {
   display: block;
   width: 170px;
   height: 92px;
@@ -424,80 +665,64 @@ img {
   border-radius: 4px;
   background-color: var(--primary-background-color);
   cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.company-logo:hover,
-.company-logo:focus {
+.clients__logo:hover, .clients__logo:focus {
   border: 1px solid var(--accent-color);
 }
-.company-logo:hover .icon-clients,
-.company-logo:focus .icon-clients {
+.clients__logo:hover .clients__icon, .clients__logo:focus .clients__icon {
   fill: var(--accent-color);
 }
-.icon-clients {
+
+.clients__icon {
   fill: var(--icon-color);
 }
 
-/*footer*/
 .footer-section {
   background-color: var(--cta-footer-background-color);
   line-height: 1.71;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-left-side {
-  display: flex;
-  flex-direction: column;
-}
-.footer {
+
+.page-footer {
   display: flex;
   flex-direction: row;
 }
-.logo-footer {
-  color: #000000;
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: 700;
-  text-decoration: none;
-  margin-right: 0px;
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
 }
-.span-footer {
-  color: #ffffff;
-}
-.adress {
+
+.page-footer__adress {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   margin-top: 20px;
 }
-.link-mail-footer {
+
+.page-footer__link {
   display: block;
   margin-top: 9px;
   margin-bottom: 9px;
-}
-.link-mail-footer,
-.link-phone-footer {
   color: #acacb0;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-phone-footer:hover,
-.link-phone-footer:focus,
-.link-mail-footer:focus,
-.link-mail-footer:hover {
+.page-footer__link:hover, .page-footer__link:focus {
   color: var(--accent-color);
 }
 
-.footer-central {
+.social-web__thumb {
   display: flex;
   flex-direction: column;
   padding-top: 14px;
   margin-left: 70px;
 }
-.join-link {
+
+.social-web__link {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -507,10 +732,20 @@ img {
   letter-spacing: 0.03em;
   font-weight: bold;
 }
-.icon-socialweb-footer {
+
+.social-web-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.socialweb__icon-footer {
   fill: #ffffff;
 }
-.logo-elipse-footer {
+
+.social-web__elipse-footer {
   display: flex;
   width: 44px;
   height: 44px;
@@ -521,18 +756,19 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.logo-elipse-footer:hover,
-.logo-elipse-footer:focus {
+.social-web__elipse-footer:hover, .social-web__elipse-footer:focus {
   background-color: var(--accent-color);
 }
-.footer-right-side {
+
+.subscription-footer {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   width: 570px;
   padding-top: 14px;
 }
-.subscription-title {
+
+.subscription__title {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -542,15 +778,18 @@ img {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.form {
+
+.subscription-form {
   margin: 0px;
 }
-.form-field {
+
+.subscription-form__field {
   display: flex;
   width: 100%;
   justify-content: center;
 }
-.form-input {
+
+.subscription-form__input {
   display: inline-block;
   width: 358px;
   padding-left: 16px;
@@ -564,7 +803,8 @@ img {
   line-height: 1.25;
   outline: none;
 }
-.btn-icon {
+
+.subscription-form__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -572,7 +812,8 @@ img {
   padding: 0px;
   position: relative;
 }
-.footer-button {
+
+.subscription-form__button {
   color: #ffffff;
   background-color: var(--accent-color);
   line-height: 1.87;
@@ -588,14 +829,28 @@ img {
   display: inline-block;
   padding: 10px 62px 10px 29px;
 }
-.icon-send {
+
+.subscription-form__icon {
   fill: #fff;
   position: absolute;
   right: 28px;
   top: 50%;
   transform: translateY(-50%);
 }
-/*portfolio*/
+
+.page-footer__logo {
+  color: #000000;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 0px;
+}
+
+.span-footer {
+  color: #ffffff;
+}
+
 .portfolio-filter {
   flex-direction: row;
   display: flex;
@@ -605,7 +860,8 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-filter-button {
+
+.portfolio-filter__button {
   background-color: var(--accent-background-color);
   border-radius: 4px 4px 4px 4px;
   color: var(--title-color);
@@ -619,27 +875,27 @@ img {
   border: 0;
   display: block;
   padding: 6px 22px 6px 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-filter-button:hover,
-.portfolio-filter-button:focus {
+.portfolio-filter__button:hover, .portfolio-filter__button:focus {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.card-title {
+.card__title {
   color: var(--title-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.card-text {
+
+.card__text {
   line-height: 1.87;
+  margin-top: 4px;
 }
-.card-set {
+
+.card__set {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -648,21 +904,31 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.card-set > .item {
+
+.card__item--portfolio {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
-.card {
+
+.card__article {
   border: 1px solid #eeeeee;
   width: 370px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
 }
-.card-overlay {
+.card__article:hover, .card__article:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card__article:hover .card__overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card__overlay {
   position: absolute;
-  bottom: 110px;
+  bottom: 120px;
   width: 100%;
   height: 294px;
   padding-left: 20px;
@@ -672,16 +938,10 @@ img {
   align-items: center;
   transform: translateY(50%);
   opacity: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card:hover .card-overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.label-card {
+.card__label {
   text-align: start;
   font-size: 18px;
   color: #ffffff;
@@ -689,18 +949,11 @@ img {
   font-weight: 400;
   text-transform: none;
 }
-.card:hover,
-.card:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
-.card-content {
+.card__content {
   padding: 20px;
 }
-.card-text {
-  margin-top: 4px;
-}
-/* Модальное окно */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -733,7 +986,8 @@ img {
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.closing-modal {
+
+.modal__closing-modal {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -744,12 +998,12 @@ img {
   height: 30px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-close {
+
+.modal__button-close {
   fill: rgba(0, 0, 0, 0.1);
 }
-.closing-modal .button-close:focus,
-.closing-modal .button-close:hover {
-  fill: rgb(33, 150, 243);
+.modal__button-close:focus, .modal__button-close:hover {
+  fill: #2196f3;
 }
 
 .subscribe-form-modal {
@@ -758,6 +1012,7 @@ img {
   flex-direction: column;
   padding-bottom: 40px;
 }
+
 .subscribe-title {
   font-size: 20px;
   display: block;
@@ -765,6 +1020,7 @@ img {
   text-align: center;
   margin-bottom: 12px;
 }
+
 .form-modal {
   display: flex;
   align-items: center;
@@ -772,20 +1028,22 @@ img {
   flex-direction: column;
   justify-content: center;
 }
-.form-field-modal {
+
+.form-modal__field {
   width: 448px;
   margin-bottom: 10px;
   margin-top: 4px;
 }
 
-.form-label {
+.form-modal__label {
   top: 50%;
   left: 40px;
   font-size: 12px;
   font-weight: 400;
   line-height: 0.01em;
 }
-.form-input-modal {
+
+.form-modal-input {
   display: block;
   width: 100%;
   margin: 0;
@@ -798,18 +1056,17 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-modal:focus + .form-label {
+.form-modal-input:focus + .form-label {
   border: 1px solid var(--accent-color);
   outline: none;
 }
-.form-input-modal:focus + .icon-modal {
-  fill: var(--accent-color);
-}
+
 .input-wrap {
   position: relative;
   display: block;
 }
-.icon-modal {
+
+.form-modal-icon {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -817,7 +1074,11 @@ img {
   fill: var(--title-color);
   display: inline-block;
 }
-.form-input-modal-comments {
+.form-modal-input:focus + .form-modal-icon {
+  fill: var(--accent-color);
+}
+
+.form-modal__comments {
   display: inline-block;
   resize: none;
   padding-left: 16px;
@@ -834,67 +1095,37 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
+
 .policy-text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var (--primary-text-color);
+  color: var --primary-text-color;
   display: block;
   padding-left: 8px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
 }
-.icon-check {
+
+.policy-box {
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-color);
+  border: 2px solid #212121;
   border-radius: 4px;
   margin-right: 8px;
   display: flex;
   align-items: center;
   padding-left: 2px;
 }
-.checkbox:checked + .policy-text .icon-check {
+
+.checkbox:checked + .policy-text > .policy-box {
   border: none;
   background-color: var(--accent-color);
 }
 
-/* .policy-text::before {
-  content: " ";
-  display: block;
-  width: 15px;
-  height: 15px;
-  border: 2px solid var(--title-color);
-  border-radius: 4px;
-  margin-right: 8px;
-}
-.checkbox:checked + .policy-text::before {
-  background-image: url("../images/check-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  background-size: contain;
-  background-color: var(--accent-color); 
-}*/
-.contract-policy {
+.policy-link {
   color: var(--accent-color);
   margin-left: 3px;
-}
-.btn-common-modal {
-  display: block;
-  color: #ffffff;
-  font-size: var(--primary-font-size);
-  background-color: var(--accent-color);
-  line-height: 1.87;
-  cursor: pointer;
-  letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
-  border: 0;
-  border-radius: 4px;
-  font-family: "roboto";
-  font-weight: bold;
-  font-size: 16px;
-}
+}/*# sourceMappingURL=main.css.map */
