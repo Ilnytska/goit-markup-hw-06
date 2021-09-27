@@ -1,39 +1,68 @@
+.section--jobs {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+img {
+  width: 370px;
+  height: 294px;
+}
 .jobs__title {
-  color: var(--title-color);
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  text-align: center;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    color: var(--title-color);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
 .jobs__list {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
-  .jobs__item:nth-child(2) {
-    padding-right: 30px;
-    padding-left: 30px;
+    .jobs__item:nth-child(2) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
   }
 }
 .thumb {
-  position: relative;
-  overflow: hidden;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    overflow: hidden;
+  }
 }
 .thumb__overlay {
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .thumb__label {
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }

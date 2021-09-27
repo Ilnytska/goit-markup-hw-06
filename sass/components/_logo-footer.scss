@@ -1,10 +1,19 @@
 .page-footer__logo {
   color: #000000;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
   text-decoration: none;
   margin-right: 0px;
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 .span-footer {
   color: #ffffff;

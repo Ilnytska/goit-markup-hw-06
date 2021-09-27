@@ -75,6 +75,86 @@
               >
             </li>
           </ul>
+          <button class="menu-open" data-menu-open>
+            <svg
+              class="mob-menu__icon"
+              width="24"
+              height="16"
+              viewBox="0 0 24 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+          <button class="mob-menu-closing" data-menu-close>
+            <svg
+              class="mob-menu__button-close"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <ul class="mob-menu-navigation">
+            <li>
+              <ul class="mob-menu__list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="index.html">Студия</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+            </li>
+            <li>
+               <ul class="mob-menu__contacts">
+              <li>
+                <a class="mob-menu__contacts--tel-link" href=""
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu__contacts--mail-link" href=""
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            </li>
+          </ul> 
+            <ul class="mob-menu__social-web">
+              <li>
+                <a class="mob-menu__social-web--link" href=""
+                  >Instagram <span class="web-border"></span
+                ></a>
+              </li>
+              <li>
+                <a class="mob-menu__social-web--link" href="">Twitter <span class="web-border"></span</a>
+              </li>
+              <li>
+                <a class="mob-menu__social-web--link" href="">Facebook <span class="web-border"></span</a>
+              </li>
+              <li>
+                <a class="mob-menu__social-web--link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -207,9 +287,12 @@
           <h2 visually hidden>title</h2>
           <ul class="features__list">
             <li class="features__item">
-              <svg class="features__icon" width="270" height="120">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
+              <button class="features__thumb" type="button">
+                <svg class="features__icon">
+                  <use href="./images/icons.svg#icon-antenna-small"></use>
+                </svg>
+              </button>
+              
 
               <h3 class="features__title">Внимание к деталям</h3>
               <p class="features__text">
@@ -218,9 +301,11 @@
               </p>
             </li>
             <li class="features__item">
-              <svg class="features__icon" width="270" height="120">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
+                <button class="features__thumb" type="button">
+                <svg class="features__icon">
+                  <use href="./images/icons.svg#icon-clock-small"></use>
+                </svg>
+              </button>
 
               <h3 class="features__title">Пунктуальность</h3>
               <p class="features__text">
@@ -229,9 +314,11 @@
               </p>
             </li>
             <li class="features__item">
-              <svg class="features__icon" width="270" height="120">
-                <use href="./images/icons.svg#icon-monitor"></use>
-              </svg>
+                <button class="features__thumb" type="button">
+                <svg class="features__icon">
+                  <use href="./images/icons.svg#icon-diagram-small"></use>
+                </svg>
+              </button>
               <h3 class="features__title">Планирование</h3>
               <p class="features__text">
                 Равным образом консультация с широким активом в значительной
@@ -239,9 +326,11 @@
               </p>
             </li>
             <li class="features__item">
-              <svg class="features__icon" width="270" height="120">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
+              <button class="features__thumb" type="button">
+                <svg class="features__icon">
+                  <use href="./images/icons.svg#icon-astronaut-small"></use>
+                </svg>
+              </button>
 
               <h3 class="features__title">Современные технологии</h3>
               <p class="features__text">
@@ -253,18 +342,21 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section">
+      <section class="section--jobs">
         <div class="container">
           <h2 class="jobs__title">Чем мы занимаемся</h2>
           <ul class="jobs__list">
             <li class="jobs__item">
               <div class="thumb">
-                <img
-                  src="./images/laptop.jpg"
-                  alt="ноутбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+            <source
+                srcset="./images/desktop/box1.jpg, ./images/desktop/box1@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            
+             <img src="./images/desktop/box1.jpg" alt="ноутбук" />
+        </picture>
+               
                 <div class="thumb__overlay">
                   <p class="thumb__label">Десктопные приложения</p>
                 </div>
@@ -272,12 +364,14 @@
             </li>
             <li class="jobs__itemitem">
               <div class="thumb">
-                <img
-                  src="./images/smartphone.jpg"
-                  alt="смартфон"
-                  width="370"
-                  height="294"
-                />
+                 <picture>
+            <source
+                srcset="./images/desktop/box2.jpg, ./images/desktop/box2@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            
+             <img src="./images/desktop/box2.jpg" alt="смартфон" />
+        </picture>
                 <div class="thumb__overlay">
                   <p class="thumb__label">Мобильные приложения</p>
                 </div>
@@ -285,12 +379,15 @@
             </li>
             <li class="jobs__itemitem">
               <div class="thumb">
-                <img
-                  src="./images/tablet.jpg"
-                  alt="планшет"
-                  width="370"
-                  height="294"
-                />
+                   <picture>
+            <source
+                srcset="./images/desktop/box3.jpg, ./images/desktop/box3@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            
+             <img src="./images/desktop/box3.jpg" alt="планшет" />
+        </picture>
+      
                 <div class="thumb__overlay">
                   <p class="thumb__label">Дизайнерские решения</p>
                 </div>
@@ -305,12 +402,22 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__card">
             <li class="card__item">
-              <img
-                src="./images/team1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+               <picture>
+            <source
+                srcset="./images/desktop/img.jpg, ./images/desktop.img@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            <source
+                srcset="./images/tablet/img.jpg, ./images/tablet/img@2x.jpg"
+                media="(min-width:768px)"
+            />
+            <source
+                srcset="./images/mobile/img.jpg, ./images/mobile/img@2x.jpg"
+                media="(min-width:320px)"
+            />
+            <img src="./img/img1mob.jpg" alt="Игорь Демьяненко" />
+        </picture>
+              <!-- <img src="./images/team1.jpg" alt="" /> -->
               <div class="card__description">
                 <h3 class="card__title--team">Игорь Демьяненко</h3>
                 <p class="card__text--team" lang="en">Product Designer</p>
@@ -367,12 +474,22 @@
               </div>
             </li>
             <li class="card__item">
-              <img
-                src="./images/team2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+            <source
+                srcset="./images/desktop/img1.jpg, ./images/desktop.img1@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            <source
+                srcset="./images/tablet/img1.jpg, ./images/tablet/img1@2x.jpg"
+                media="(min-width:768px)"
+            />
+            <source
+                srcset="./images/mobile/img1.jpg, ./images/mobile/img1@2x.jpg"
+                media="(min-width:320px)"
+            />
+            <img src="./images/mobile/img1.jpg" alt="Ольга Репина" />
+        </picture>
+              
               <div class="card__description">
                 <h3 class="card__title--team">Ольга Репина</h3>
                 <p class="card__text--team" lang="en">Frontend Developer</p>
@@ -429,12 +546,21 @@
               </div>
             </li>
             <li class="card__item">
-              <img
-                src="./images/team3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+            <source
+                srcset="./images/desktop/img2.jpg, ./images/desktop.img2@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            <source
+                srcset="./images/tablet/img2.jpg, ./images/tablet/img2@2x.jpg"
+                media="(min-width:768px)"
+            />
+            <source
+                srcset="./images/mobile/img2.jpg, ./images/mobile/img2@2x.jpg"
+                media="(min-width:320px)"
+            />
+             <img src="../images/mobile/img2.jpg" alt="Николай Тарасов" />
+        </picture>
               <div class="card__description">
                 <h3 class="card__title--team">Николай Тарасов</h3>
                 <p class="card__text--team" lang="en">Marketing</p>
@@ -491,12 +617,22 @@
               </div>
             </li>
             <li class="card__item">
-              <img
-                src="./images/team4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+               <picture>
+            <source
+                srcset="./images/desktop/img3.jpg, ./images/desktop.img3@2x.jpg"
+                media="(min-width:1200px)"
+            />
+            <source
+                srcset="./images/tablet/img3.jpg, ./images/tablet/img3@2x.jpg"
+                media="(min-width:768px)"
+            />
+            <source
+                srcset="./images/mobile/img3.jpg, ./images/mobile/img3@2x.jpg"
+                media="(min-width:320px)"
+            />
+            <img src="./images/mobile/img3.jpg" alt="Михаил Ермаков" />
+        </picture>
+      
               <div class="card__description">
                 <h3 class="card__title--team">Михаил Ермаков</h3>
                 <p class="card__text--team" lang="en">UI Designer</p>
@@ -710,5 +846,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
   </body>
 </html>
