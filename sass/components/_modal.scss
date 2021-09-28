@@ -50,7 +50,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__button-close {
-  fill: rgba(0, 0, 0, 0.1);
+  fill: rgba(0, 0, 0, 1);
   &:focus,
   &:hover {
     fill: rgb(33, 150, 243);
