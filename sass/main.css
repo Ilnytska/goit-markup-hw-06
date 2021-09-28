@@ -686,9 +686,11 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   padding: 100px 0px 100px 0px;
   margin: 0 auto;
+  width: 360px;
 }
 @media screen and (min-width: 480px) {
   .cta {
@@ -715,7 +717,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
-  margin-top: 30px;
 }
 @media screen and (min-width: 480px) {
   .cta__title {
