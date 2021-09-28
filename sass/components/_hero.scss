@@ -20,18 +20,18 @@
       ),
       url(../images/mobile/imghero@2x.jpg);
   }
-  @media screen and (min-width: 480px) {
+  @media not all and (min-width: 480px) {
     max-width: 510px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media not all and (min-width: 768px) {
     max-width: 798px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/tablet/imghero.jpg);
-    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    @media not all and (min-width: 768px) and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(
@@ -65,16 +65,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 40px 100px 40px;
+  padding: 100px 0px 100px 0px;
+  margin: 0 auto;
 
   @media screen and (min-width: 480px) {
-    padding: 118px 60px 118px 60px;
+    padding: 118px 0px 118px 0px;
   }
   @media screen and (min-width: 768px) {
-    padding: 118px 204px 118px 204px;
+    padding: 118px 0px 118px 0px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 200px 290px 200px 290px;
+    padding: 200px 0px 200px 0px;
     // padding-bottom: 200px;
   }
 }
@@ -87,6 +88,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+  margin-top: 30px;
 
   @media screen and (min-width: 480px) {
     font-size: 26px;
