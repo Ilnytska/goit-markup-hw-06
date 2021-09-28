@@ -74,7 +74,7 @@
   align-items: center;
   width: 290px;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   @media screen and (min-width: 480px) {
     width: 370px;
   }
@@ -101,6 +101,7 @@
   font-weight: 400;
   line-height: 0.01em;
   color: var(--primary-text-color);
+  align-items: flex-start;
 }
 .form-modal-input {
   display: block;

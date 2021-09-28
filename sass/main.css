@@ -512,7 +512,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 700px;
+  min-height: 100%;
 }
 
 .mob-menu-navigation {
@@ -686,7 +686,6 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   padding: 100px 0px 100px 0px;
   margin: 0 auto;
@@ -827,6 +826,11 @@ img {
   font-size: 14px;
   display: block;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 
 .features__item {
@@ -1740,7 +1744,6 @@ img {
   align-items: center;
   width: 290px;
   flex-direction: column;
-  justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .form-modal {
@@ -1776,6 +1779,7 @@ img {
   font-weight: 400;
   line-height: 0.01em;
   color: var(--primary-text-color);
+  align-items: flex-start;
 }
 
 .form-modal-input {
