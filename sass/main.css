@@ -363,13 +363,12 @@ img {
 }
 
 .navigation__list {
-  display: flex;
-  flex-direction: row;
   display: none;
 }
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -417,9 +416,6 @@ img {
 }
 
 .navigation-contacts {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -751,6 +747,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .section-features {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section-features {
     padding-top: 94px;
@@ -778,7 +779,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .features__list {
-    flex-direction: row;
     margin-left: 0px;
     margin-top: 0px;
     flex-wrap: nowrap;
@@ -887,10 +887,6 @@ img {
 }
 
 .jobs__list {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
   display: none;
 }
 @media screen and (min-width: 1200px) {
@@ -923,6 +919,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    content: " ";
   }
 }
 
@@ -983,7 +980,6 @@ img {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .team__card {
-    flex-direction: row;
     margin: 0px;
     flex-wrap: nowrap;
   }
@@ -1008,7 +1004,6 @@ img {
 @media screen and (min-width: 768px) {
   .team__card .card__item {
     width: 354px;
-    height: 536;
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 15px;
     margin-top: 0px;
@@ -1371,9 +1366,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscription-form__field {
-    display: flex;
     width: 100%;
-    justify-content: center;
     flex-wrap: nowrap;
     height: 50px;
   }
@@ -1565,8 +1558,6 @@ img {
 
 .card__item--portfolio {
   margin-bottom: 30px;
-}
-.card__item--portfolio:first-child {
   display: flex;
   flex-grow: 1;
 }
@@ -1581,8 +1572,6 @@ img {
 @media screen and (min-width: 1200px) {
   .card__item--portfolio {
     flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
   }
 }
 
@@ -1625,6 +1614,7 @@ img {
 
 .card__overlay {
   position: absolute;
+  content: " ";
   width: 100%;
   height: 280px;
   top: 0;

@@ -66,17 +66,11 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  // padding: 100px 0px 100px 0px;
   margin: 0 auto;
   padding-top: 100px;
-  // width: 360px;
-
   @media screen and (min-width: 480px) {
     padding-top: 118px;
   }
-  // @media screen and (min-width: 768px) {
-  //   padding: 118px 0px 118px 0px;
-  // }
   @media screen and (min-width: 1200px) {
     padding-top: 220px;
   }
